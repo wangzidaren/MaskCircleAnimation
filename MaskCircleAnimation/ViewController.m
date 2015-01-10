@@ -14,7 +14,7 @@
 
 
 #define animationtoValue 2.5f
-#define animationfromValue 0.25f
+#define animationfromValue 0.15f
 #define animationDuration 1.0f
 
 
@@ -25,7 +25,9 @@
     [super viewDidLoad];
     
     
-    [self initUI];
+    
+    
+    [self performSelector:@selector(initUI) withObject:nil afterDelay:0.5f];
     
 }
 
